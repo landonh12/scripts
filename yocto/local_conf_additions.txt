@@ -1,0 +1,4 @@
+BB_NUMBER_THREADS = "6"
+PARALLEL_MAKE = "-j 4"
+
+DL_DIR = /home/$USER/yocto/downloads
