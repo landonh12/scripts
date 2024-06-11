@@ -1,0 +1,8 @@
+If you want to add a configuration option to the kernel, you can do it in a few ways.
+This is the way I did it to make it stick, though.
+I went to the folder arch/arm64/configs and opened the following files:
+imx.config
+imx_v8_defconfig
+defconfig
+and added my config options there.
+This is probably not the best way of doing it, but this is what worked after hours of trying different things, like adding config options to the kernel through yocto.

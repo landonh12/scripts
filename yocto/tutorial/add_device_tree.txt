@@ -1,0 +1,6 @@
+To add a new device tree to the kernel, you need to do a couple of things.
+First you need to add the file to arch/arm64/boot/dts/freescale/.
+Then, you need to add it to the Makefile at arch/arm64/boot/dts/freescale/Makefile.
+Finally, you need to go to the Yocto source, to sources/meta-imx/meta-imx-bsp/conf/machine
+In here are machine files, these files contain a list of device tree files to build and include in the image.
+Add it here.
