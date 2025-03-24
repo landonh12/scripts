@@ -1,0 +1,11 @@
+clone the kernel
+once kernel is cloned, copy config to ./.config
+config is at arch/arm64/configs/
+arch/arm64/configs/defconfig is config for 8M devices
+arch/arm64/configs/imx_v7_defconfig is for older devices
+if all else fails just copy /proc/config.gz to .config
+Then, run make menuconfig
+save config
+Then run make -j8
+This builds the kernel, kernel image is saved at arch/arm64/boot/Image
+then, to make modules, run make modules_install INSTALL_MOD_PATH=/path_where_you_want_to_install
